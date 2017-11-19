@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #e7ecee;
+}
+
+
+/*darle estilos a la barra de navegacion*/
+header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    display: inline-block;
+    margin-left: 65px;
+}
+
+nav ul li{
+    display: inline-block;
+    color: #607377;
+    font-weight: bold;
+    font-size: 13.5px;
+    margin: 10px;
+}
+
+nav ul li .fa{
+    font-size: 18px;
+    margin: 5px;
+}
+
+nav button{
+    background-color: #05a2f2;
+    width: 88px;
+    height: 32px;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.fa-twitter{
+    color: #05a2f2;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#search{
+    width: 220px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #f5f8f9;
+    border: solid #607377;
+    border-width: thin;
+    display: inline-block;
+    position: absolute;
+    right: 215px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#search input{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+#search input:focus{
+    border: none;
+}
+
+#search .fa{
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+nav figure{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 170px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+nav figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/*estilos de la parte que contienes las 3 secciones*/
+main{
+    width: 1205px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+
+
+/*estilos a la primera seccion*/
+#information{
+    background: white;
+    display: inline-block; 
+    width: 288px;
+    height: 500px;
+    margin: 10px 5px;
+    vertical-align: top;
+}
+
+
+/*estilos a la segunda seccion donde van los tweets*/
+#tweet{
+    display: inline-block; 
+    width: 588px;
+    margin: 10px 5px;
+    vertical-align: top;
+}
+
+#twittear{
+    background-color: #e8f5fa;
+}
+
+#tweet figure{
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px 0 13px 25px;
+}
+
+#tweet img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#tweet form{
+    display: inline-block;
+    position: relative;
+}
+
+.section-tweet{
+    width: 506px;
+    height: 36px;
+    display: inline-block;
+    margin: 13px 5px;
+    vertical-align: top;
+    resize: none;
+    border-radius: 10px;
+    border: solid #00a3e6;
+    border-width: thin;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.section-tweet::placeholder{
+    color: #00a3e6;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-tweet-focus{
+    width: 506px;
+    height: 80px;
+    display: inline-block;
+    margin: 13px 5px;
+    vertical-align: top;
+    resize: none;
+    border-radius: 10px;
+    border: solid #00a3e6;
+    border-width: thin;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.section-tweet-focus::placeholder{
+    color: gray;
+}
+
+.submit{
+    background-color: #05a2f2;
+    width: 88px;
+    height: 32px;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.submit-none{
+    display: none;
+}
+
+/*#tweet textarea:focus{
+    como quitarle ese azul
+}*/
+
+#tweet-here{
+    background-color: white;
+}
+
+.icons{
+    display: none;
+}
+
+.icons-focus{
+    display: inline-block;
+    color: #00a3e6;
+    font-size: 20px;
+    margin: 0 0 0 60px;
+}
+
+.icons-focus i{
+    display: inline-block;
+    margin: 0 10px 20px 10px;
+}
+
+
+/*estilos a la ultima seccion de sugerencias*/
+#suggestions{
+    background: white;
+    display: inline-block; 
+    width: 288px;
+    height: 500px;
+    margin: 10px 5px;
+    vertical-align: top;
+}
+
+
