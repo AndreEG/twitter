@@ -38,11 +38,12 @@
                 <figure>
                     <img src="assets/profile.jpg" alt="foto de perfil">
                 </figure>
-                <form action="">
+                <div class="form">
                     <textarea name="tweet" id="section-tweet" class="section-tweet" placeholder="¿Qué está pasando?"></textarea>                    
-                    <input type="submit" value="twittear" class="submit-none">
-                </form>
-                <div class="icons" id="icons">
+                    <input type="submit" value="twittear" class="submit" id="btn-twittear">
+                    <p id="p-count" class="display-none"></p>
+                </div>
+                <div id="icons" class="display-none">
                     <i class="fa fa-picture-o" aria-hidden="true"></i>
                     <i class="fa fa-file-image-o" aria-hidden="true"></i>
                     <i class="fa fa-bar-chart" aria-hidden="true"></i>
@@ -50,7 +51,7 @@
                 </div> 
             </div>
             <div id="tweet-here">
-                aca los tweet
+                <ul></ul>
             </div>
         </section>
         <section id="suggestions">

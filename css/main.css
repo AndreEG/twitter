@@ -50,7 +50,12 @@ nav button{
     position: absolute;
     right: 70px;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav button:focus{
+    outline: 0;
 }
 
 .fa-twitter{
@@ -88,6 +93,7 @@ nav button{
 
 #search input:focus{
     border: none;
+    outline: 0px;
 }
 
 #search .fa{
@@ -157,7 +163,8 @@ main{
     border-radius: 50%;
 }
 
-#tweet form{
+#tweet .form{
+    height: 110px;
     display: inline-block;
     position: relative;
 }
@@ -191,18 +198,29 @@ main{
     vertical-align: top;
     resize: none;
     border-radius: 10px;
-    border: solid #00a3e6;
-    border-width: thin;
+    border: 2px solid #00a3e6;
     box-sizing: border-box;
     padding: 8px;
+}
+
+.section-tweet-focus:focus{
+    outline: 0 none;
 }
 
 .section-tweet-focus::placeholder{
     color: gray;
 }
 
+.area-count{
+    color: #05a2f2;
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+    top: 65px;
+}
+
 .submit{
-    background-color: #05a2f2;
+    background: #05a2f2;
     width: 88px;
     height: 32px;
     border: none;
@@ -212,21 +230,27 @@ main{
     font-size: 15px;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 
 .submit-none{
-    display: none;
+    background-color: #7c9fb1;
 }
 
-/*#tweet textarea:focus{
-    como quitarle ese azul
-}*/
+.submit:focus{
+    outline: 0;
+}
 
 #tweet-here{
     background-color: white;
 }
 
-.icons{
+#tweet-here ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.display-none{
     display: none;
 }
 
