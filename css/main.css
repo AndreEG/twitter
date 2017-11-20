@@ -219,6 +219,14 @@ main{
     top: 65px;
 }
 
+.count-red{
+    color: red;
+}
+
+.count-orange{
+    color: orange;
+}
+
 .submit{
     background: #05a2f2;
     width: 88px;

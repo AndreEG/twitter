@@ -18,6 +18,15 @@ window.addEventListener('load', function() {
   window.addEventListener('keyup', function() {
     var count = textArea.value.length;
     countArea.textContent = 140 - count;
+    if (countArea.textContent <= 10) {
+      countArea.classList.add('count-red');
+      countArea.classList.remove('count-orange');
+    } else if (countArea.textContent <= 20) {
+      countArea.classList.add('count-orange');      
+    } else {
+      countArea.classList.remove('count-red');
+      countArea.classList.remove('count-orange');
+    };
   });
 });
 
