@@ -201,6 +201,7 @@ main{
     border: 2px solid #00a3e6;
     box-sizing: border-box;
     padding: 8px;
+    overflow: hidden; /*hace que no se muestre el scroll*/
 }
 
 .section-tweet-focus:focus{
@@ -285,4 +286,6 @@ main{
     vertical-align: top;
 }
 
-
+.form input[type=submit][disabled]{
+    background-color: #8da4ad;
+}
